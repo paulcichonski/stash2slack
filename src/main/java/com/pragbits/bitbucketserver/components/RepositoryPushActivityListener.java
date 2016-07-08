@@ -190,7 +190,6 @@ public class RepositoryPushActivityListener {
                             payload.setChannel(patterns.get(pattern));
                             log.debug("#sending message to: " + payload.getChannel());
                             slackNotifier.SendSlackNotification(hookSelector.getSelectedHook(), gson.toJson(payload));
-                            break;
                         }
                     }
                 }
